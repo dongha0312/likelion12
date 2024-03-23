@@ -1,4 +1,4 @@
-package 공통세션;
+package 공통세션.리팩토링;
 
 public class re10171 {
     public static void main(String[] args) {
