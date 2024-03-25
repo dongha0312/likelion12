@@ -1,0 +1,46 @@
+#title-area {
+    background-color: lightsalmon;
+    width: 250px;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text {
+    color: beige;
+}
+
+#ul-area {
+    background-color: skyblue;
+}
+
+.hightlight {
+    font-size: 20px;
+    color: pink;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#ul-area h5 {
+    margin: 0;
+}
+
+.p-area {
+    background-color: yellow;
+}
+
+.span-area {
+    color: plum;
+    font-weight: bold;
+}
+
+.img-area {
+    width: 50%;
+    height: 50%;
+    border-radius: 30px;
+}
+
+.span-hightlight {
+    font-style: italic;
+}
