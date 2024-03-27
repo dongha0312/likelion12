@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
 
 body {
     background-image: url("img//lofi_anime.png");
@@ -7,9 +7,15 @@ body {
     margin: 0;
     padding: 0;
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
+header {
+    margin-bottom: 23%;
+}
+
+pre,
 p,
 li,
 a,
@@ -61,13 +67,98 @@ header {
 
 
 p {
+
     font-size: 45px;
     padding-top: 10%;
     text-align: center;
 }
 
-#about_me h1 {}
+#about_me {
+    margin: 100px 0 0 0;
+    width: auto;
+    height: auto;
+}
 
-#about_me p {
-    font-size: 20px;
+#about_me h1 {
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+#about_me pre,
+#about_me p,
+#about_me li {
+    font-family: "Dongle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0%;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+}
+
+#about_me pre {
+    margin-bottom: 5%;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8%;
+}
+
+table li {
+    list-style: none;
+}
+
+th {
+    width: 19%;
+}
+
+/*  */
+
+.parallax-3 {
+    background: url('/introduction/img/czech.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax-inner {
+    padding: 10% 0;
+}
+
+
+.parallax-1 p {
+    font-size: 16px;
+    color: #555;
+    text-align: justify;
+    line-height: 30px;
+    margin: 0 50px 40px;
+}
+
+#BE {
+    font-family: "Dongle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0%;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20%;
+}
+
+#contact_me {
+    text-align: center;
+}
+
+.github {
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.instagram {
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
 }

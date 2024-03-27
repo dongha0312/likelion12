@@ -4,31 +4,94 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dongha's Introduction</title>
-    <link
-      rel="stylesheet"
-      href="/공통세션/FE Session/introduction/style.css"
-    />
+    <link rel="stylesheet" href="/introduction/style.css" />
   </head>
+
   <body>
     <!-- / menu bar: about me, contact me, BE?FE -->
     <header>
       <!--Dongha Ryu name logo -->
-      <h1>Dongha Ryu</h1>
+      <h1 class="name_logo">Dongha Ryu</h1>
       <nav>
         <ul class="nav">
+          <!-- hover하면 글씨 커짐-->
           <li><a href="#about_me">About me</a></li>
+          <!-- BE가 FE 밀어냄 -->
+          <li><a href="#BE">BE : FE</a></li>
           <li><a href="#contact_me">Contact me</a></li>
-          <li><a href="#be">BE : FE</a></li>
         </ul>
       </nav>
     </header>
     <!--quote -->
-    <p>"Life is too short, Make the most of it"</p>
+
+    <p class="quote">"Life is too short, Make the most of it"</p>
 
     <!-- About me -->
     <section id="about_me">
-      <h1>About Me</h1>
-      <p>안녕하세요! 저는 20학번 류동하입니다.</p>
+      <h1>About Me!</h1>
+      <pre>
+        안녕하세요! 저는 아기사자 류동하입니다. 
+        개발 공부를 시작한지 얼마 안된 코린이 잘 부탁드립니당!
+      </pre>
+      <table>
+        <tr>
+          <th>
+            <p>&nbsp;좋아하는 것</p>
+            <ul>
+              <li><p>🚘드라이브🚘</p></li>
+              <li><p>🎧음악 듣기🎧</p></li>
+              <li><p>🎬영화관 가기🎬</p></li>
+              <li><p>🧑🏻‍🍳집에서 요리🧑🏻‍🍳</p></li>
+            </ul>
+          </th>
+
+          <th>
+            <p>&nbsp;해보고 싶은 것</p>
+            <ul>
+              <li><p>🧑🏻‍💻ios 앱 개발🧑🏻‍💻</p></li>
+              <li><p>서버 구축</p></li>
+              <li><p>🇺🇸USA 여행🇺🇸</p></li>
+              <li><p>🇪🇺유럽 다시가기🇪🇺</p></li>
+            </ul>
+          </th>
+        </tr>
+      </table>
     </section>
+
+    <section>
+      <section class="parallax-3">
+        <div class="parallax-inner">
+          <h1>My Favorite Country</h1>
+        </div>
+      </section>
+      <pre id="BE">
+        안녕히 계세요 여러분~! 
+        전 이 세상의 모든 굴레와 속박을 벗어던지고 김영한(백엔드)을 만나러 떠납니다~
+      </pre>
+    </section>
+    <footer>
+      <h1 id="contact_me">Contact Me!</h1>
+      <table>
+        <tr>
+          <th>
+            <a href="https://github.com/dongha0312" target="_blank"
+              ><img
+                class="github"
+                src="/introduction/img/github.png"
+                alt="github"
+              />
+            </a>
+          </th>
+          <th>
+            <a href=""></a>
+            <img
+              class="instagram"
+              src="/introduction/img/instagram.png"
+              alt="instagram"
+            />
+          </th>
+        </tr>
+      </table>
+    </footer>
   </body>
 </html>
