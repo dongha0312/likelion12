@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+
+body {
+    background-image: url("img//lofi_anime.png");
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p,
+li,
+a,
+button {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    color: beige;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: beige;
+    text-decoration: none;
+    margin-right: auto;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav {
+    list-style: none;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+.nav li a {
+    transition: all 1s ease 0s;
+}
+
+.nav li a:hover {
+    counter-reset: #0088a9;
+}
+
+
+p {
+    font-size: 45px;
+    padding-top: 10%;
+    text-align: center;
+}
+
+#about_me h1 {}
+
+#about_me p {
+    font-size: 20px;
+}
