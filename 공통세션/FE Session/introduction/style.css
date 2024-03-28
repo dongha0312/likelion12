@@ -11,9 +11,6 @@ body {
     background-repeat: no-repeat;
 }
 
-header {
-    margin-bottom: 23%;
-}
 
 pre,
 p,
@@ -42,9 +39,9 @@ h1 {
 
 header {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
+    margin-bottom: 23%;
 }
 
 .nav {
@@ -64,6 +61,17 @@ header {
 .about_me a:hover {
     font-size: 1.3em;
     color: darkgoldenrod;
+}
+
+.parallax {
+    background: url('/introduction/img/czech.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax-inner {
+    padding: 10% 0;
 }
 
 .BE a {
@@ -134,17 +142,6 @@ th {
     width: 19%;
 }
 
-
-.parallax {
-    background: url('/introduction/img/czech.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.parallax-inner {
-    padding: 10% 0;
-}
 
 
 #BE {
