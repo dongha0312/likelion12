@@ -21,7 +21,7 @@ public class re5596 {
         }
         if (totalScore1 >= totalScore2){
             System.out.println(totalScore1);
-        } else if (totalScore1 < totalScore2) {
+        } else {
             System.out.println(totalScore2);
         }
     }

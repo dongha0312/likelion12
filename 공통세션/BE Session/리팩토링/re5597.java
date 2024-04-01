@@ -1,5 +1,6 @@
 package 공통세션.리팩토링;
 
+
 import java.util.Scanner;
 
 public class re5597 {
