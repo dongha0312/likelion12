@@ -111,7 +111,7 @@ public class SignUp {
             while (true){
                 //switch문 로그인, 로그아웃
                 System.out.println("=================================================");
-                System.out.println("옵션을 선택해주세요. (1. 로그인 ||  2. 회원정보 불러오기  || 3.종료)");
+                System.out.println("옵션을 선택해주세요. (1. 로그인 ||  2. 회원정보 불러오기  ||  3. 회원정보 수정  || 4. 종료)");
                 System.out.println("=================================================");
                 int option = Integer.parseInt(br.readLine());
                 switch (option){
@@ -147,7 +147,7 @@ public class SignUp {
                                     System.out.println("남은 횟수는 " + count + "입니다.");
                                     count--;
                                     if (count == 0){
-                                        System.out.println("남은 기회는 없습니다. 프로그램을 종료합니다.");
+                                        System.out.println("남은 기회는 없습니다.");
                                         success = true;
                                     }
                                 }
@@ -165,17 +165,62 @@ public class SignUp {
                         st = new StringTokenizer(br.readLine());
                         String Id = st.nextToken();
                         String Pw = st.nextToken();
+                        System.out.println("회원의 정보를 불러옵니다.");
+                        if (!id.containsKey(Id) || !pw.containsKey(Pw)){
+                            System.out.println("===========================");
+                            System.out.println("입력하신 정보는 일치 하지 않습니다.");
+                            System.out.println("===========================");
+                        }
+                        if(id.containsKey(Id)&&pw.containsKey(Pw)){
+                            System.out.println("================");
+                            System.out.println("-----회원정보-----");
+                            System.out.println("ID: " + Id);
+                            System.out.println("PassWord: " + Pw);
+                            System.out.println("BirthDate: " + id.get(Id));
+                            System.out.println("Email: " + pw.get(Pw));
+                        }
                         break;
 
                     //회원 정부 수정
                     case 3:
+                        System.out.println("=====================");
+                        System.out.println("-----회원정보 수정----- ");
+                        System.out.println("회원의 ID와 비밀번호를 입력해주세요: ");
+                        st = new StringTokenizer(br.readLine());
+                        String iD = st.nextToken();
+                        String pW = st.nextToken();
+                        if (!id.containsKey(iD) || !pw.containsKey(pW)){
+                            System.out.println("===========================");
+                            System.out.println("입력하신 정보는 일치 하지 않습니다.");
+                            System.out.println("===========================");
+                            break;
+                        }
 
+                        System.out.println("수정 하고픈 정보를 골라주세요. (1.생년월일 | 2.이메일)");
+                        int dataChange = Integer.parseInt(br.readLine());
+                        switch (dataChange){
+                            case 1:
+                                System.out.println("새로운 생년월일을 입력해주세요.");
+                                String newYear = br.readLine();
+                                id.replace(iD,id.get(iD),newYear);
+                                System.out.println("새로운 생년월일은 " + id.get(iD)+"입니다.");
+                                break;
 
+                            case 2:
+                                System.out.println("새로운 이메일을 입력해주세요.");
+                                String newEmail = br.readLine();
+                                pw.replace(pW,pw.get(pW),newEmail);
+                                System.out.println("새로운 이메일은 " + pw.get(pW)+"입니다.");
+                                break;
+                        }
 
+                        break;
                    //종료
                    case 4:
                       System.out.println("시스템을 종료하겠습니다.");
+                       success = true;
                       break;
+
                 }if(option == 4)break;
             }
         }
